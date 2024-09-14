@@ -6,22 +6,27 @@ import MyProgress from "../pages/myProgress";
 import Home from "../pages/home";
 import MyRoutes from "../pages/myRoutes";
 import Notifications from "../pages/notifications";
+import Navbar from "../components/Navbar";
+import LandingPage from "../pages/LandingPage";
 
 export default function Navigation() {
   return (
     <BrowserRouter>
       <div className="flex">
         <SideBar />
-        <main className="flex-1">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/my-progress" element={<MyProgress />} />
-            <Route path="/my-routes" element={<MyRoutes />} />
-            <Route path="/chat" element={<Chat />} />
-            <Route path="/notifications" element={<Notifications />} />
-          </Routes>
-        </main>
-      </div>
+        <div className="flex w-full flex-col items-center  bg-base ">
+          <Navbar />
+          <main className="flex-1 w-full">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/my-progress" element={<MyProgress />} />
+              <Route path="/my-routes" element={<MyRoutes />} />
+              <Route path="/chat" element={<Chat />} />
+              <Route path="/notifications" element={<Notifications />} />
+            </Routes>
+          </main>
+        </div>
+      </div>{" "}
     </BrowserRouter>
   );
 }

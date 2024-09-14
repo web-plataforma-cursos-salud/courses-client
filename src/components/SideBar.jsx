@@ -11,11 +11,11 @@ import logo from "../assets/logo/FisiomFulness.png";
 export default function SideBar() {
   const location = useLocation();
   return (
-    <div className="bg-base container w-1/5 h-screen">
+    <div className="bg-base container w-1/5 h-screen pr-9">
       <div className="flex flex-row justify-evenly items-center mt-5 mb-7">
         {" "}
         <img src={logo} alt="Logo" className="w-16 h-auto" />{" "}
-        <p className="text-2xl  text-white font-blackOps mt-2 w-auto">
+        <p className="text-xl  text-white font-blackOps mt-2 ml-2 w-auto">
           FisiomFulness
         </p>{" "}
         {/* Texto personalizado */}
