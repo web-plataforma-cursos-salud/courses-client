@@ -10,20 +10,14 @@ export default function InformationLanding() {
             El Futuro de
             <br className="hidden md:block" />
             la Formación en Salud{" "}
-            <span className="relative px-1">
-              <div className="absolute inset-x-0 bottom-0 h-3 transform -skew-x-12 bg-[#2cfaff]" />
-              <span className="relative inline-block text-[#5dc4e2]">
-                en Latinoamérica
-              </span>
-            </span>
           </h2>
-          <p className=" text-[#e2f2ff] md:text-lg">
+          <p className=" text-white md:text-lg">
             Formación de calidad para profesionales de la salud. Explora
             nuestros cursos en Psicología, Enfermería, y mucho más.
           </p>
         </div>
         <div className="grid gap-5 row-gap-8 sm:grid-cols-2">
-          <div className="bg-white border-l-8 shadow-sm border-[#34aec4]">
+          <div className="bg-white border-l-8 shadow-sm border-[#3472c4]">
             <div className="h-full p-5 border border-l-0 rounded-r">
               <h6 className="mb-2 font-semibold leading-5 text-[#1e40af]">
                 Profesionales Capacitados
@@ -34,7 +28,7 @@ export default function InformationLanding() {
               </p>
             </div>
           </div>
-          <div className="bg-white border-l-8 shadow-sm  border-[#34aec4]">
+          <div className="bg-white border-l-8 shadow-sm border-[#3472c4]">
             <div className="h-full p-5 border border-l-0 rounded-r">
               <h6 className="mb-2 font-semibold leading-5 text-[#1e40af]">
                 Contenido Actualizado

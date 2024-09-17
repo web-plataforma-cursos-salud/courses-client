@@ -1,6 +1,16 @@
+import logoPsico from "../assets/logo/img-psycology.png";
+import logoFarmacia from "../assets/logo/iconFarmacia.png";
+import logoEnfermeria from "../assets/logo/logoEnfermeria.png";
+import logofisio from "../assets/logo/logoFisioterapia.png";
+import logoNutricion from "../assets/logo/nutricion.png";
+import logoPrimerosAux from "../assets/logo/primeros-auxilios.png";
+
 export const Courses = () => {
   return (
-    <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+    <section
+      id="Cursos"
+      className=" px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20"
+    >
       <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
         <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-white sm:text-4xl md:mx-auto">
           <span className="relative inline-block">
@@ -15,7 +25,7 @@ export const Courses = () => {
       <div className="grid grid-cols-2 gap-5 row-gap-6 mb-10 sm:grid-cols-3 lg:grid-cols-6">
         <div className="text-center">
           <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-[#1e40af] sm:w-24 sm:h-24">
-            <span className="text-white">🧠</span>
+            <img src={logoPsico} alt="psicologia-imagen" className="w-1/2" />
           </div>
           <h6 className="mb-2 font-semibold leading-5 text-white">
             Psicología
@@ -23,7 +33,7 @@ export const Courses = () => {
         </div>
         <div className="text-center">
           <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-[#1e40af] sm:w-24 sm:h-24">
-            <span className="text-white">💊</span>
+            <img src={logoFarmacia} alt="imagen farmacia" className="w-3/4" />
           </div>
           <h6 className="mb-2 font-semibold leading-5 text-white">
             Farmacología
@@ -31,7 +41,7 @@ export const Courses = () => {
         </div>
         <div className="text-center">
           <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-[#1e40af] sm:w-24 sm:h-24">
-            <span className="text-white">🩺</span>
+            <img src={logoEnfermeria} alt="logo-enfermeria" className="w-3/4" />
           </div>
           <h6 className="mb-2 font-semibold leading-5 text-white">
             Enfermería
@@ -39,7 +49,7 @@ export const Courses = () => {
         </div>
         <div className="text-center">
           <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-[#1e40af] sm:w-24 sm:h-24">
-            <span className="text-white">🦵</span>
+            <img src={logofisio} alt="logoFisio" className="w-3/4" />
           </div>
           <h6 className="mb-2 font-semibold leading-5 text-white">
             Fisioterapia
@@ -47,13 +57,17 @@ export const Courses = () => {
         </div>
         <div className="text-center">
           <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-[#1e40af] sm:w-24 sm:h-24">
-            <span className="text-white">🥗</span>
+            <img src={logoNutricion} alt="logo-nutricion" />
           </div>
           <h6 className="mb-2 font-semibold leading-5 text-white">Nutrición</h6>
         </div>
         <div className="text-center">
           <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-[#1e40af] sm:w-24 sm:h-24">
-            <span className="text-white">🆘</span>
+            <img
+              src={logoPrimerosAux}
+              alt="Logo-primeros-aux"
+              className="w-3/4"
+            />
           </div>
           <h6 className="mb-2 font-semibold leading-5 text-white">
             Primeros Auxilios
@@ -83,6 +97,6 @@ export const Courses = () => {
           </span>
         </a>
       </div>
-    </div>
+    </section>
   );
 };
