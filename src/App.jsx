@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Navigation from "./Navigation";
 import LandingPage from "./pages/LandingPage/index.jsx";
-import "./App.css";
 
 function App() {
   // Estado para verificar si el usuario está registrado

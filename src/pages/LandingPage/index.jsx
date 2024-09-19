@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import InformationLanding from "../../components/InformationLanding";
-import { NavbarLanding } from "../../components/NavbarLanding";
-import { Pricing } from "../../components/pricing";
-import ContactUs from "../../components/ContactUs";
-import { Courses } from "../../components/Courses";
-import CardLogin from "../../components/CardLogin";
-import CardSignup from "../../components/CardSignup";
+import InformationLanding from "../../components/LandingPage/InformationLanding";
+import { NavbarLanding } from "../../components/LandingPage/NavbarLanding";
+import { Pricing } from "../../components/LandingPage/Pricing";
+import ContactUs from "../../components/LandingPage/ContactUs";
+import { Courses } from "../../components/LandingPage/Courses";
+import CardLogin from "../../components/auth/CardLogin";
+import CardSignup from "../../components/auth/CardSignup";
 
 
 export default function LandingPage() {

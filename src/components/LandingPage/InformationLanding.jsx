@@ -1,5 +1,5 @@
 import React from "react";
-import imagen_landing from "../assets/images/imagen_landing.avif";
+import imagen_landing from "../../assets/images/imagen_landing.avif";
 
 export default function InformationLanding() {
   return (

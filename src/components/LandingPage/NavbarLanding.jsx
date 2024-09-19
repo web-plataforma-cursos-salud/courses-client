@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "../assets/logo/FisiomFulness.png";
+import logo from "../../assets/logo/FisiomFulness.png";
 
 
 export const NavbarLanding = ({ onLoginClick, onSignUpClick }) => {

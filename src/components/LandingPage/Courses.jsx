@@ -1,9 +1,9 @@
-import logoPsico from "../assets/logo/img-psycology.png";
-import logoFarmacia from "../assets/logo/iconFarmacia.png";
-import logoEnfermeria from "../assets/logo/logoEnfermeria.png";
-import logofisio from "../assets/logo/logoFisioterapia.png";
-import logoNutricion from "../assets/logo/nutricion.png";
-import logoPrimerosAux from "../assets/logo/primeros-auxilios.png";
+import logoPsico from "../../assets/logo/img-psycology.png";
+import logoFarmacia from "../../assets/logo/iconFarmacia.png";
+import logoEnfermeria from "../../assets/logo/logoEnfermeria.png";
+import logofisio from "../../assets/logo/logoFisioterapia.png";
+import logoNutricion from "../../assets/logo/nutricion.png";
+import logoPrimerosAux from "../../assets/logo/primeros-auxilios.png";
 
 export const Courses = () => {
   return (
