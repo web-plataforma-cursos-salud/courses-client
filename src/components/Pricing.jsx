@@ -1,4 +1,4 @@
-export const Pricing = () => {
+export const Pricing = ({onLoginClick}) => {
   return (
     <section id="Precios" className="relative w-full h-full">
       <div className="absolute hidden w-full lg:block h-96" />
@@ -153,8 +153,9 @@ export const Pricing = () => {
                 </li>
               </ul>
               <button
+              onClick={()=>onLoginClick()}
                 type="submit"
-                className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-customCeleste hover:bg-customCeleste-dark focus:shadow-outline focus:outline-none"
+                className="inline-flex items-center justify-center w-full h-12 px-6 font-semibold tracking-wide text-white transition duration-200 rounded shadow-md bg-customCeleste hover:bg-customCelesteDark focus:shadow-outline focus:outline-none"
               >
                 Get Now
               </button>
@@ -277,6 +278,7 @@ export const Pricing = () => {
                 </li>
               </ul>
               <button
+              onClick={()=>onLoginClick()}
                 type="submit"
                 className="inline-flex items-center justify-center w-full h-12 px-6 font-semibold tracking-wide text-white transition duration-200 rounded shadow-md bg-customCeleste hover:bg-customCelesteDark focus:shadow-outline focus:outline-none"
               >

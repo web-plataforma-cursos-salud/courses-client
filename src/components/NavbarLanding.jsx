@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import logo from "../assets/logo/FisiomFulness.png";
 
-export const NavbarLanding = () => {
+
+export const NavbarLanding = ({ onLoginClick, onSignUpClick }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
@@ -57,20 +58,23 @@ export const NavbarLanding = () => {
           <ul className="hidden lg:flex items-center space-x-8">
             <li>
               <a
-                href="/"
+                href="#Login"
                 className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-300 transform hover:scale-105 hover:bg-white hover:text-blue-600 hover:border-blue-600 border border-transparent rounded shadow-lg focus:outline-none"
                 aria-label="Ingresar"
                 title="Ingresar"
+                onClick={onLoginClick}
               >
                 Ingresar
               </a>
+              
             </li>
             <li>
               <a
-                href="/"
+                href="#Registrase"
                 className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-300 transform hover:scale-105 hover:bg-white hover:text-blue-600 hover:border-blue-600 border border-transparent rounded shadow-lg focus:outline-none"
                 aria-label="Registrarse"
                 title="Registrarse"
+                onClick={onSignUpClick}
               >
                 Registrarse
               </a>
@@ -158,20 +162,22 @@ export const NavbarLanding = () => {
                       </li>
                       <li>
                         <a
-                          href="/"
+                          href="#Ingresar"
                           aria-label="Ingresar"
                           title="Ingresar"
                           className="font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-custom-celeste"
+                          onClick={onLoginClick}
                         >
                           Ingresar
                         </a>
                       </li>
                       <li>
                         <a
-                          href="/"
+                          href="#Registrase"
                           className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-blue-700 transition duration-200 rounded shadow-xl bg-custom-celeste hover:bg-custom-celeste focus:shadow-outline focus:outline-none"
                           aria-label="Registrarse"
                           title="Registrarse"
+                          onClick={onSignUpClick}
                         >
                           Registrarse
                         </a>
