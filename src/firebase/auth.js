@@ -1,4 +1,4 @@
-import { auth } from "./firebase";
+import { auth } from "./firebase.js";
 import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
@@ -10,11 +10,11 @@ import {
 } from "firebase/auth";
 
 export const doCreateUserWithEmailAndPassword = async (email, password) => {
-  return createUserWithEmailAndPassword(auth, email, password);
+  return await createUserWithEmailAndPassword(auth, email, password);
 };
 
 export const doSignInWithEmailAndPassword = async (email, password) => {
-  return signInWithEmailAndPassword(email, password);
+  return await signInWithEmailAndPassword(auth, email, password);
 };
 
 export const doSignInWithGoogle = async () => {
@@ -25,19 +25,19 @@ export const doSignInWithGoogle = async () => {
 };
 
 export const doSignOut = async () => {
-  return auth.signOut();
+  return await auth.signOut();
 };
 
-export const doPasswordRestet = async (email) => {
-  return sendPasswordResetEmail(email);
+export const doPasswordReset = async (email) => {
+  return await sendPasswordResetEmail(auth, email); // Asegúrate de pasar `auth` aquí
 };
 
 export const doPasswordChange = async (password) => {
-  return updatePassword();
+  return await updatePassword(auth.currentUser, password); // Debes pasar el usuario actual
 };
 
-export const doSendEmailVerificartion = async () => {
-  return sendEmailVerification(auth.currentUser, {
+export const doSendEmailVerification = async () => {
+  return await sendEmailVerification(auth.currentUser, {
     url: `${window.location.origin}/`,
   });
 };

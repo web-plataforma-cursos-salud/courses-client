@@ -1,6 +1,7 @@
 import React from "react";
 import { FiLogOut } from "react-icons/fi";
 import userLogo from "../assets/logo/icons8-user-default-64.png"; // Imagen por defecto en caso de que no se proporcione una imagen
+import { doSignOut } from "../firebase/auth";
 
 const UserProfile = ({ userImage, userName, onLogout }) => {
   return (
@@ -21,7 +22,7 @@ const UserProfile = ({ userImage, userName, onLogout }) => {
 
       {/* Botón de Desloguear */}
       <button
-        onClick={onLogout}
+        onClick={doSignOut}
         className="flex items-center px-4 py-2 bg-blue-400 text-white rounded-md hover:bg-blue-500 transition duration-300"
       >
         <FiLogOut className="font-bold" />

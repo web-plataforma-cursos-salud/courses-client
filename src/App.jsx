@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Navigation from "./Navigation";
+import Navigation from "./Navigation/index.jsx";
 import LandingPage from "./pages/LandingPage/index.jsx";
 
 function App() {
@@ -13,21 +13,7 @@ function App() {
 
   return (
     <div className="App">
-      {isAuthenticated ? (
-        // Si está autenticado, muestra la navegación
-        <Navigation />
-      ) : (
-        // Si no está autenticado, muestra la pantalla de login o mensaje
-        <div className="login-screen">
-          <LandingPage />
-          <button
-            onClick={handleLogin}
-            className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600"
-          >
-            Iniciar sesión
-          </button>
-        </div>
-      )}
+      <Navigation />
     </div>
   );
 }

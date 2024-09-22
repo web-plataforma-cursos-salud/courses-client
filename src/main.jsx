@@ -13,12 +13,10 @@ import "./App.css";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <BrowserRouter>
-      {" "}
-      {/* Asegúrate de envolver toda la app con BrowserRouter */}
-      <AuthProvider>
-        <App />
-      </AuthProvider>
-    </BrowserRouter>
+    {" "}
+    {/* Asegúrate de envolver toda la app con BrowserRouter */}
+    <AuthProvider>
+      <App />
+    </AuthProvider>
   </StrictMode>
 );

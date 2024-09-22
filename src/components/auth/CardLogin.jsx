@@ -2,14 +2,9 @@ import React, { useState } from "react";
 import imageLogin from "../../assets/images/image-login-card-1.jpg";
 import { Link, Navigate } from "react-router-dom";
 import logo from "../../assets/logo/FisiomFulness.png";
-import {
-  doSignInWithEmailAndPassword,
-  doSignInWithGoogle,
-} from "../../firebase/auth";
-import { useAuth } from "../../context/authContext";
+import { doSignInWithEmailAndPassword } from "../../firebase/auth";
 
 export default function CardLogin({ onClose, onSignUpClick }) {
-  const { userLoggedIn } = useAuth() || {};
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [isSigningIn, setIsSigningIn] = useState(false);
@@ -30,21 +25,22 @@ export default function CardLogin({ onClose, onSignUpClick }) {
   };
 
   // Manejo del inicio de sesión con Google
-  const onGoogleSubmit = async (event) => {
-    event.preventDefault();
-    if (!isSigningIn) {
-      setIsSigningIn(true);
-      await doSignInWithGoogle().catch((err) => {
-        setIsSigningIn(false);
-        setErrorMessage(err.message);
-      });
-    }
-  };
+  // const onGoogleSubmit = async (event) => {
+  //   {
+  //     console.log(isSigningIn);
+  //   }
+  //   event.preventDefault();
+  //   if (!isSigningIn) {
+  //     setIsSigningIn(true);
+  //     await doSignInWithGoogle().catch((err) => {
+  //       setIsSigningIn(false);
+  //       setErrorMessage(err.message);
+  //     });
+  //   }
+  // };
 
   return (
     <>
-      {userLoggedIn && <Navigate to="/" replace={true} />}
-
       <div className="relative flex w-full max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800 lg:max-w-4xl">
         {/* Imagen de fondo */}
         <div
@@ -84,7 +80,7 @@ export default function CardLogin({ onClose, onSignUpClick }) {
             ¡Bienvenido de nuevo!
           </p>
 
-          {/* Inicio de sesión con Google */}
+          {/* Inicio de sesión con Google
           <form onSubmit={onGoogleSubmit}>
             <button
               type="submit"
@@ -114,12 +110,12 @@ export default function CardLogin({ onClose, onSignUpClick }) {
                 Ingresar con Google
               </span>
             </button>
-          </form>
+          </form> */}
 
           <div className="flex items-center justify-between mt-4">
             <span className="w-1/5 border-b dark:border-gray-600 lg:w-1/4"></span>
             <label className="text-xs text-center text-gray-500 uppercase dark:text-gray-400 ">
-              O inicia sesión con correo
+              inicia sesión con correo
             </label>
             <span className="w-1/5 border-b dark:border-gray-600 lg:w-1/4"></span>
           </div>
