@@ -23,8 +23,8 @@ export default function SideBar() {
       <NavItem
         icon={GoHomeFill}
         label="Inicio"
-        to="/"
-        isActive={location.pathname === "/"}
+        to="/Home"
+        isActive={location.pathname === "/Home"}
       />
       <NavItem
         icon={RiArchiveStackFill}
