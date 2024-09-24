@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import logo from "../../assets/logo/FisiomFulness.png";
 
-
 export const NavbarLanding = ({ onLoginClick, onSignUpClick }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -66,7 +65,6 @@ export const NavbarLanding = ({ onLoginClick, onSignUpClick }) => {
               >
                 Ingresar
               </a>
-              
             </li>
             <li>
               <a

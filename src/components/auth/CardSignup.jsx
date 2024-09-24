@@ -7,7 +7,7 @@ import {
 import { FaGoogle } from "react-icons/fa";
 import imageSignup from "../../assets/images/image-signup-card2.jpg";
 
-export default function CardSignup({ onClose }) {
+export default function CardSignup({ onClose, onSinginClick }) {
   const [name, setName] = useState("");
   const [lastname, setLastname] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
@@ -83,9 +83,9 @@ export default function CardSignup({ onClose }) {
             />
           </svg>
         </button>
-        <div className="flex flex-col lg:flex-row h-full sm:h-auto">
+        <div className="flex flex-col lg:flex-row h- sm:h-auto">
           <div
-            className="hidden lg:block lg:w-2/5 bg-cover bg-center"
+            className="hidden lg:block lg:w-2/5 bg-cover bg-center top-72 "
             style={{ backgroundImage: `url(${imageSignup})` }}
           ></div>
           <div className="w-full p-6 lg:p-12 flex flex-col justify-center max-h-full overflow-y-auto">
@@ -199,7 +199,7 @@ export default function CardSignup({ onClose }) {
             <p className="mt-4 text-sm text-center text-gray-600 dark:text-gray-400">
               ¿Ya tienes una cuenta?{" "}
               <button
-                onClick={onClose}
+                onClick={onSinginClick}
                 className="text-blue-600 hover:underline"
               >
                 Inicia sesión

@@ -2,8 +2,14 @@ import React from "react";
 import { FiLogOut } from "react-icons/fi";
 import userLogo from "../assets/logo/icons8-user-default-64.png"; // Imagen por defecto en caso de que no se proporcione una imagen
 import { doSignOut } from "../firebase/auth";
+import { useNavigate } from "react-router-dom";
 
-const UserProfile = ({ userImage, userName, onLogout }) => {
+const UserProfile = ({ userImage, userName }) => {
+  const Navigate = useNavigate();
+  const handlLogOut = () => {
+    doSignOut();
+    Navigate("/LandingPage");
+  };
   return (
     <div className="flex justify-evenly items-center space-x-4 w-1/6 ">
       <div className=" flex flex-col justify-center items-center	">
@@ -22,7 +28,7 @@ const UserProfile = ({ userImage, userName, onLogout }) => {
 
       {/* Botón de Desloguear */}
       <button
-        onClick={doSignOut}
+        onClick={() => handlLogOut()}
         className="flex items-center px-4 py-2 bg-blue-400 text-white rounded-md hover:bg-blue-500 transition duration-300"
       >
         <FiLogOut className="font-bold" />

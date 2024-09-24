@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
-import SideBar from "../components/SideBar";
+import SideBar from "../components/HomeUser/Sidebar";
 import Chat from "../pages/chat/index";
 import MyProgress from "../pages/myProgress/index";
 import Home from "../pages/home/index";
 import MyRoutes from "../pages/myRoutes/index";
 import Notifications from "../pages/notifications/index";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/NavBar";
 import LandingPage from "../pages/LandingPage/index";
 import { useAuth } from "../context/authContext";
 
