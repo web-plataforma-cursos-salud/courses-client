@@ -41,7 +41,7 @@ export default function Navigation() {
                     <SideBar className="w-1/4 h-full overflow-y-auto" />
 
                     {/* Contenido principal con flex-grow para ocupar el resto del espacio */}
-                    <div className="flex-1 bg-base p-4 overflow-y-auto">
+                    <div className="flex-1 bg-blue-400 overflow-y-auto">
                       <Routes>
                         <Route path="/Home" element={<Home />} />
                         <Route path="/my-progress" element={<MyProgress />} />
@@ -51,6 +51,7 @@ export default function Navigation() {
                           path="/notifications"
                           element={<Notifications />}
                         />
+                        <Route path="Home/video-course" element={<Chat />} />
                         {/* Ruta inválida estando logueado redirige a Home */}
                         <Route path="*" element={<Navigate to="/Home" />} />
                       </Routes>

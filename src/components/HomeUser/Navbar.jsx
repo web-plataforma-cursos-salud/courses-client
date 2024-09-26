@@ -27,7 +27,7 @@ const Navbar = () => {
   const location = useLocation();
 
   return (
-    <nav className="relative bg-blue-400 shadow dark:bg-gray-800 flex items-center justify-between">
+    <nav className="relative bg-blue-400 shadowflex items-center justify-between">
       {console.log(currentUser)}
       <div className="flex justify-between w-full items-center px-4">
         {/* Sección solo de pantallas grandes */}

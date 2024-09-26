@@ -1,0 +1,51 @@
+[
+  {
+    "courseImage": "https://images.unsplash.com/photo-1550439062-609e1531270e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    "courseLogo": "https://example.com/logo-react.png",
+    "className": "Introducción a React",
+    "currentClass": 1,
+    "totalClasses": 13
+  },
+  {
+    "courseImage": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    "courseLogo": "https://example.com/logo-js.png",
+    "className": "Fundamentos de JavaScript",
+    "currentClass": 5,
+    "totalClasses": 20
+  },
+  {
+    "courseImage": "https://images.unsplash.com/photo-1508385082359-fde6af7c1df2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    "courseLogo": "https://example.com/logo-css.png",
+    "className": "Estilos Avanzados con CSS",
+    "currentClass": 3,
+    "totalClasses": 10
+  },
+  {
+    "courseImage": "https://images.unsplash.com/photo-1526378721620-4b21261d5f53?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    "courseLogo": "https://example.com/logo-node.png",
+    "className": "Desarrollo Backend con Node.js",
+    "currentClass": 7,
+    "totalClasses": 15
+  },
+  {
+    "courseImage": "https://images.unsplash.com/photo-1517430816045-df4b7de19aa6?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    "courseLogo": "https://example.com/logo-database.png",
+    "className": "Bases de Datos SQL",
+    "currentClass": 9,
+    "totalClasses": 12
+  },
+  {
+    "courseImage": "https://images.unsplash.com/photo-1537432376769-00d1e796b43b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    "courseLogo": "https://example.com/logo-firebase.png",
+    "className": "Autenticación con Firebase",
+    "currentClass": 2,
+    "totalClasses": 8
+  },
+  {
+    "courseImage": "https://images.unsplash.com/photo-1556740749-887f6717d7e4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    "courseLogo": "https://example.com/logo-ux.png",
+    "className": "Diseño de Experiencia de Usuario",
+    "currentClass": 4,
+    "totalClasses": 10
+  }
+]
